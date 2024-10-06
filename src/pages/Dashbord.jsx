@@ -1,32 +1,43 @@
-import React from 'react';
-import ButtonCard from '../features/dashbord/ButtonCard';
-import Bkgroung from '../features/dashbord/Bkgroung';
-import DashCard from '../features/dashbord/DashCard';
-import DashCard2 from '../features/dashbord/DashCard2';
-import SlideCard from '../ui/SlideCard';
-
-import { Container } from 'react-bootstrap';
+import React from "react";
+import ButtonCard from "../features/dashbord/ButtonCard";
+import Bkgroung from "../features/dashbord/Bkgroung";
+import DashCard from "../features/dashbord/DashCard";
+import DashCard2 from "../features/dashbord/DashCard2";
+import SlideCard from "../ui/SlideCard";
+import { Container, Row, Col } from "react-bootstrap";
 
 function Dashboard() {
   return (
-    <Container fluid style={{ padding: '5px', margin: '5px', width: '100vw' }}>
-    <Bkgroung />
-    <DashCard />
-    <div style={{ margin: '20px 0' }}>
-        <DashCard2 />
-      </div>
-      
-      <div style={{ margin: '20px 0', paddingBottom: '95px' }}>
-        <SlideCard />
-      </div>
+    <Container fluid className="p-3">
+      <Row className="mb-3">
+        <Col xs={12}>
+          <Bkgroung />
+        </Col>
+      </Row>
 
-    <div style={{ margin: '60px 0' }}>
-    <ButtonCard />
-    </div>
-    
-      <div style={{ margin: '20px 0' }}>
-       
-      </div>
+      <Row className="mb-3">
+        <Col xs={12} md={12}>
+          <DashCard />
+        </Col>
+      </Row>
+
+      <Row>
+        <Col xs={12} md={12}>
+          <DashCard2 />
+        </Col>
+      </Row>
+
+      <Row className="mb-3">
+        <Col xs={12}>
+          <SlideCard />
+        </Col>
+      </Row>
+
+      <Row className="mb-3">
+        <Col xs={12}>
+          <ButtonCard />
+        </Col>
+      </Row>
     </Container>
   );
 }

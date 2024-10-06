@@ -1,14 +1,13 @@
-import React, { useRef } from 'react';
-import Sidebar from './components/Sidebar'; 
-import Dashboard from './pages/Dashbord';
-import Projects from './pages/Projects';
-import AboutUs from './pages/AboutUs';
-import Event from './pages/Event';
-import Team from './pages/Team';
-import Footer from './components/Footer'; 
+import React, { useRef } from "react";
+import Sidebar from "./components/Sidebar";
+import Dashboard from "./pages/Dashbord";
+import Projects from "./pages/Projects";
+import AboutUs from "./pages/AboutUs";
+import Event from "./pages/Event";
+import Team from "./pages/Team";
+import Footer from "./components/Footer";
 
 function App() {
-  
   const dashboardRef = useRef(null);
   const contactRef = useRef(null);
   const projectsRef = useRef(null);
@@ -19,15 +18,27 @@ function App() {
   const registerRef = useRef(null);
   const loginRef = useRef(null);
 
-  
   const scrollToSection = (section) => {
-    section.current.scrollIntoView({ behavior: 'smooth' });
+    section.current.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
     <div className="app-container">
-      <Sidebar scrollToSection={scrollToSection} refs={{ dashboardRef, contactRef, projectsRef, aboutUsRef, newsRef, eventRef, teamRef, registerRef, loginRef }} />
-      
+      <Sidebar
+        scrollToSection={scrollToSection}
+        refs={{
+          dashboardRef,
+          contactRef,
+          projectsRef,
+          aboutUsRef,
+          newsRef,
+          eventRef,
+          teamRef,
+          registerRef,
+          loginRef,
+        }}
+      />
+
       <main className="content">
         <section ref={dashboardRef}>
           <Dashboard />
@@ -36,7 +47,6 @@ function App() {
         <section ref={projectsRef}>
           <Projects />
         </section>
-
 
         <section ref={eventRef}>
           <Event />
@@ -49,10 +59,9 @@ function App() {
         <section ref={aboutUsRef}>
           <AboutUs />
         </section>
-        
       </main>
 
-      <Footer /> 
+      <Footer />
     </div>
   );
 }
