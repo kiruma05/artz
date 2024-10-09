@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
-import image2 from "../../asset/image2.jpg";
+import capture1 from "../../asset/capture1.jpeg";
 import image3 from "../../asset/image3.jpg";
 
 function DashCard() {
@@ -11,7 +11,7 @@ function DashCard() {
         <Col xs={12} md={6} className="mb-4">
           <div
             style={{
-              backgroundImage: `url(${image2})`,
+              backgroundImage: `url(${capture1})`,
               backgroundSize: "cover",
               backgroundPosition: "center",
               height: "60vh", // Increased height for the background image
