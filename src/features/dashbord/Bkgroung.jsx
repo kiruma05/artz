@@ -61,7 +61,7 @@ function Bkgroung() {
             overflow: "hidden",
           }}
         >
-          <h1 className="text-primary" style={{ fontSize: "2.0rem" }}>
+          <h1 className="text-primary" style={{ fontSize: "2.5rem" }}>
             WELCOME TO TRAC WEBSITE
           </h1>
         </div>
