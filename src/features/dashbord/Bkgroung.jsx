@@ -35,8 +35,8 @@ function Bkgroung() {
             height: "80%",
             objectFit: "cover",
             zIndex: "-1",
-            // borderBottomLeftRadius: "120px",
-            // borderBottomRightRadius: "120px",
+            borderBottomLeftRadius: "80px",
+            borderBottomRightRadius: "80px",
           }}
         >
           <source src={video} type="video/mp4" />
@@ -49,11 +49,11 @@ function Bkgroung() {
             top: 0,
             left: 0,
             width: "100vw",
-            height: "100vh",
-            //backgroundColor: "rgba(27, 155, 177, 0.3)",
+            height: "90vh",
+            backgroundColor: "rgba(29, 155, 177, 0.3)",
             padding: "20px",
-            borderBottomLeftRadius: "280px",
-            borderBottomRightRadius: "280px",
+            borderBottomLeftRadius: "150px",
+            borderBottomRightRadius: "150px",
             boxShadow: "0 30px 30px rgba(8, 8, 8, 0)",
             color: "white",
             zIndex: "1",
@@ -61,7 +61,7 @@ function Bkgroung() {
             overflow: "hidden",
           }}
         >
-          <h1 className="text-primary" style={{ fontSize: "2.5rem" }}>
+          <h1 className="text-primary" style={{ fontSize: "2.1rem" }}>
             WELCOME TO TRAC WEBSITE
           </h1>
         </div>
