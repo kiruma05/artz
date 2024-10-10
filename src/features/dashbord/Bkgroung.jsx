@@ -35,8 +35,8 @@ function Bkgroung() {
             height: "80%",
             objectFit: "cover",
             zIndex: "-1",
-            borderBottomLeftRadius: "120px",
-            borderBottomRightRadius: "120px",
+            // borderBottomLeftRadius: "120px",
+            // borderBottomRightRadius: "120px",
           }}
         >
           <source src={video} type="video/mp4" />
@@ -50,11 +50,11 @@ function Bkgroung() {
             left: 0,
             width: "100vw",
             height: "100vh",
-            backgroundColor: "rgba(27, 155, 177, 0.3)",
+            //backgroundColor: "rgba(27, 155, 177, 0.3)",
             padding: "20px",
             borderBottomLeftRadius: "280px",
             borderBottomRightRadius: "280px",
-            boxShadow: "0 30px 30px rgba(8, 8, 8, 0.941)",
+            boxShadow: "0 30px 30px rgba(8, 8, 8, 0)",
             color: "white",
             zIndex: "1",
             textAlign: "center",
