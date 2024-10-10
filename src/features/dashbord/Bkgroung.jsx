@@ -49,7 +49,7 @@ function Bkgroung() {
             top: 0,
             left: 0,
             width: "100vw",
-            height: "90vh",
+            height: "100vh",
             backgroundColor: "rgba(29, 155, 177, 0.3)",
             padding: "20px",
             borderBottomLeftRadius: "150px",
