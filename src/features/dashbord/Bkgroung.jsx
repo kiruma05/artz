@@ -1,5 +1,5 @@
 import React from "react";
-import video3 from "../../asset/video3.mp4";
+import video from "../../asset/video.mp4";
 import { Container } from "react-bootstrap";
 
 function Bkgroung() {
@@ -39,7 +39,7 @@ function Bkgroung() {
             borderBottomRightRadius: "120px",
           }}
         >
-          <source src={video3} type="video/mp4" />
+          <source src={video} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
