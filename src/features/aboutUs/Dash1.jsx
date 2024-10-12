@@ -1,34 +1,32 @@
 //import React, { useState } from 'react';
-import image3 from '../../asset/image1.jpeg';
+import image3 from "../../asset/image1.jpeg";
 
 function Dash1() {
   // const [hoveredButton, setHoveredButton] = useState(null);
 
   const backgroundStyle = {
     backgroundImage: `url(${image3})`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    height: '80vh',
-    width: '100%',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    color: 'white',
-    textAlign: 'center',
-    padding: '1rem'
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    height: "80vh",
+    width: "100%",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    color: "white",
+    textAlign: "center",
+    padding: "1rem",
   };
 
   const cardStyle = {
-    backgroundColor: 'white',
-    padding: '2rem',
-    width: '90%',
-    maxWidth: '900px', 
+    backgroundColor: "white",
+    padding: "2rem",
+    width: "90%",
+    maxWidth: "900px",
     //boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-    marginTop: '-3rem',
-    marginBottom: '3rem'
+    marginTop: "-3rem",
+    marginBottom: "3rem",
   };
-
-  
 
   // const buttonStyle = {
   //   backgroundColor: 'blue',
@@ -45,30 +43,47 @@ function Dash1() {
   //   cursor: 'pointer'
   // };
 
-  
-
   return (
     <div>
       {/* Background Section */}
-      <div style={backgroundStyle}>
-      </div>
+      <div style={backgroundStyle}></div>
 
       {/* Card Section */}
-      <div style={{ display: 'flex', justifyContent: 'center' }}>
+      <div style={{ display: "flex", justifyContent: "center" }}>
         <div style={cardStyle}>
-          <h1 style={{ color: 'blue', textAlign: 'center', marginBottom: '1rem' }}>About TRAC<br /><br /></h1>
-          <p style={{ lineHeight: '2.2' }}>
-            <strong> Registration: </strong>
-          The Organization shall be registered as a Non Governmental Organization under the Non Governmental
-          Organizations Act, No. 24 of 2002 as amended from time to time.<br />
-          <strong>Head Office: </strong>
-          The head office will be based at MAKULU STAND street, nearby University of Dodoma, 17 MAKULU ward, Dodoma
-          District, Dodoma Region
-           P. O BOX 2580 .<br />
-          <strong>Area of Operation: </strong>
-          The Organization shall operate in National.<br />
-
-            <br /><br />
+          <h1
+            style={{ color: "blue", textAlign: "center", marginBottom: "1rem" }}
+          >
+            About TRAC
+            <br />
+            <br />
+          </h1>
+          <p style={{ lineHeight: "2.2" }}>
+            <strong> REGISTRATION: </strong>
+            <br />
+            The organization is registered as a non-governmental organization
+            under the Non-Governmental Organizations Act No. 24 of 2002 as
+            amended from time to time.
+            <br />
+            <br />
+            <strong>HEAD OFFICE: </strong>
+            <br />
+            Head office is based at Makulu Stand street nearby University of
+            Dodoma,
+            <br />
+            17 Makulu Ward,
+            <br />
+            Dodoma City Council, <br />
+            P. O. Box 2580, <br />
+            Dodoma.
+            <br />
+            <br />
+            <strong>AREA OF OPERATION: </strong>
+            <br />
+            The organization operates its activities nationwide.
+            <br />
+            <br />
+            <br />
           </p>
           {/* <div style={buttonContainerStyle}>
             <a 
