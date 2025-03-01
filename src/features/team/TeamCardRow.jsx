@@ -3,6 +3,9 @@ import { Col, Container, Row } from "react-bootstrap";
 import imagetem3 from "../../asset/imagetem3.png";
 import imagetem4 from "../../asset/imagetem4.jpeg";
 import imagetem5 from "../../asset/imagetem5.jpeg";
+import thirdone from "../../asset/thirdone.jpeg";
+import maneger from "../../asset/maneger.jpg";
+import shitindi from "../../asset/shitindi.jpg";
 import { Link } from "react-router-dom";
 
 function TeamCardRow() {
@@ -10,6 +13,9 @@ function TeamCardRow() {
     chairperson: false,
     directorGeneral: false,
     financialManager: false,
+    health: false,
+    transport: false,
+    commnication: false,
   });
 
   const toggleText = (role) => {
@@ -52,6 +58,57 @@ function TeamCardRow() {
 
   const backgroundStyle5 = {
     backgroundImage: `url(${imagetem3})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    height: "400px",
+    width: "300px",
+    borderRadius: "60%",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    color: "white",
+    textAlign: "center",
+    padding: "3rem",
+    position: "relative",
+    margin: "0rem 0",
+  };
+
+  const backgroundStyle11 = {
+    backgroundImage: `url(${thirdone})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    height: "400px",
+    width: "300px",
+    borderRadius: "60%",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    color: "white",
+    textAlign: "center",
+    padding: "3rem",
+    position: "relative",
+    margin: "0rem 0",
+  };
+
+  const backgroundStyle12 = {
+    backgroundImage: `url(${maneger})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    height: "400px",
+    width: "300px",
+    borderRadius: "60%",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    color: "white",
+    textAlign: "center",
+    padding: "3rem",
+    position: "relative",
+    margin: "0rem 0",
+  };
+
+  const backgroundStyle13 = {
+    backgroundImage: `url(${shitindi})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "400px",
@@ -206,6 +263,114 @@ function TeamCardRow() {
             </div>
           </div>
         </Col>
+
+        <Col md={3} className="mb-4">
+          <div style={backgroundStyle11}></div>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+            <div style={cardStyle}>
+              <h4
+                style={{
+                  color: "blue",
+                  textAlign: "center",
+                  marginBottom: "1rem",
+                }}
+              >
+                Head of Department of Health and Safety
+                <br />
+                <br />
+              </h4>
+              <p style={{ lineHeight: "2.2" }}>
+                {showMore.health ? (
+                  <>
+                   <strong> Dr. Edah Ndabila </strong>serves as the Head of Department of Health and Safety at TRAC, specializing in promoting road safety and environmental health in road combustion systems.
+                    <br />
+                  </>
+                ) : (
+                  " Dr. Edah Ndabila serves as the Head of Department of Health and Safety at ..."
+                )}
+              </p>
+              <Link
+                className="text-primary text-decoration-none"
+                onClick={() => toggleText("health")}
+              >
+                {showMore.health ? "Show Less" : "Explore"}
+              </Link>
+            </div>
+          </div>
+        </Col>
+
+        <Col md={3} className="mb-4">
+          <div style={backgroundStyle12}></div>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+            <div style={cardStyle}>
+              <h4
+                style={{
+                  color: "blue",
+                  textAlign: "center",
+                  marginBottom: "1rem",
+                }}
+              >
+                Director of Communications 
+                <br />
+                <br />
+              </h4>
+              <p style={{ lineHeight: "2.2" }}>
+                {showMore.communication ? (
+                  <>
+                   <strong> K.a.t.b.u.c.m.s.t: MULOKOZI JOAS TIBAHWA </strong>Mulokozi Joas Tibahwa oversees communication strategies and institutional public relations.
+                    <br />
+                    <br />
+                  </>
+                ) : (
+                  "K.a.t.b.u.c.m.s.t: Mulokozi Joas Tibahwa oversees communication..."
+                )}
+              </p>
+              <Link
+                className="text-primary text-decoration-none"
+                onClick={() => toggleText("communication")}
+              >
+                {showMore.communication ? "Show Less" : "Explore"}
+              </Link>
+            </div>
+          </div>
+        </Col>
+
+        <Col md={3} className="mb-4">
+          <div style={backgroundStyle13}></div>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+            <div style={cardStyle}>
+              <h4
+                style={{
+                  color: "blue",
+                  textAlign: "center",
+                  marginBottom: "1rem",
+                }}
+              >
+                Director, Transport Department
+                <br />
+                <br />
+              </h4>
+              <p style={{ lineHeight: "2.2" }}>
+                {showMore.transport ? (
+                  <>
+                   <strong> Felister Shitindi </strong>Felister Shitindi leads the Transport Department, overseeing efficient transport systems and ensuring compliance with safety standards.
+                    <br />
+                    <br />
+                  </>
+                ) : (
+                  "Felister Shitindi leads the Transport Department..."
+                )}
+              </p>
+              <Link
+                className="text-primary text-decoration-none"
+                onClick={() => toggleText("transport")}
+              >
+                {showMore.transport ? "Show Less" : "Explore"}
+              </Link>
+            </div>
+          </div>
+        </Col>
+
       </Row>
     </Container>
   );
